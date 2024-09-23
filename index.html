@@ -10,28 +10,19 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="container mx-auto">
+<body class="container mx-auto ">
     <!-- head section style -->
-    <header class="container mx-auto">
-        <nav>
-            <div class="navbar bg-base-200 shadow-sm rounded-md">
-                <div class="navbar-start">
-                    <a href="blog.html"><button class="btn btn-success hover:bg-orange-500">Blog</button></a>
-                </div>
-                <div class="navbar-center hover:bg-orange-500">
-                    <a class="btn btn-ghost text-xl">
-                        <img class="w-10" src="images/logo.png" alt="" /> Donate
-                        Bangladesh
-                    </a>
-                </div>
-                <div class="navbar-end ">
-                    <span class="flex gap-3 w-28 shadow-sm p-1 hover:bg-orange-500">
-                        <img src="images/coin.png" alt="">
-                        <p>500</p>
-                        <h3> BDT </h3>                                 
-                    </span>
-                </div>
-            </div>
+    <header>
+        <nav class=" p-2">
+           <ul class="flex sm:flex-row justify-between gap-3 sm:p-4 ">
+            <li><a class="font-bold btn btn-success hover:bg-orange-500" href="blog.html">Blog</a></li>
+            <li><a class="flex items-center gap-3 font-semibold" href=""> <img src="images/logo.png" alt="">Donate Bangladesh </a></li>
+            <li><a href="">  <span class="flex gap-3 w-28 shadow-sm p-1 hover:bg-orange-500">
+                <img src="images/coin.png" alt="">
+                <p>500</p>
+                <h3> BDT </h3>                                 
+            </span> </a></li>
+           </ul>
         </nav>
     </header>
 
@@ -69,6 +60,7 @@
                     <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                     <p> The recent floods in Noakhali have caused significant damage to <br>homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief 
                          <br>efforts and making a positive impact on the lives of those in need.</p>
+                         <!-- add money alert -->
                          <div id="sussess-add" class="hidden">
                             <h3>money add sussess </h3>
                         </div>

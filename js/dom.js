@@ -17,8 +17,7 @@ document.getElementById('btn-add-money')
         const newBalance = balanceNumber + addMoneyNumber;
         document.getElementById('account-balance').innerText = newBalance;
 
-         // show popup
-         showPopup('Money added successfully!');
+         
       
         // add to doanation hostory
         const p =document.createElement('p')
@@ -27,6 +26,10 @@ document.getElementById('btn-add-money')
                                     Date: ${currentDateTime}`
         // show tag
         document.getElementById('history-container').appendChild(p)
+        
+
+        // show popup
+        showPopup('Money added successfully!');
 
          
         

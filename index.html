@@ -12,9 +12,9 @@
 
 <body class="container mx-auto">
     <!-- head section style -->
-    <header class="sm:p-4">
+    <header class="container mx-auto">
         <nav>
-            <div class="navbar bg-base-200 shadow-sm rounded-md sm:">
+            <div class="navbar bg-base-200 shadow-sm rounded-md">
                 <div class="navbar-start">
                     <a href="blog.html"><button class="btn btn-success hover:bg-orange-500">Blog</button></a>
                 </div>
@@ -97,19 +97,23 @@
                     </div>
                     
                     <div class="card-body p-4 my-4">
-                        <div>
-                            <button class="btn flex justify-center gap-2">
-                                <img class="w-6" src="images/coin.png" alt="" /> 0 BDT
-                            </button>
-                        </div>
+                        <span  class="flex gap-3 w-28 shadow-sm p-1">
+                            <img src="images/coin.png" alt="">
+                            <p id="account-balance2">500</p>
+                            <h3> BDT </h3>                                 
+                        </span>
                         <h2 class="card-title">Donate for Flood Relief in Feni,Bangladesh</h2>
                         <p> The recent floods in Feni have devastated local communities, leading <br> to severe disruption and loss. Your generous donation will help <br> provide immediate aid, including food, clean water, and medical <br> supplies, to those affected by this calamity. Together, we can offer <br> crucial support and help rebuild lives in the aftermath of this disaster. <br> Every contribution counts towards making a real difference. Please <br> consider donating today to assist those in urgent need.</p>
+                        <!-- Popup sms -->
+                        <div id="sussess-add2" class="hidden">
+                            <h3>money add sussess </h3>
+                        </div>
                         <div class="">
-                            <input type="text" placeholder="write Donation Amount"
+                            <input id="input2-add-money" type="text" placeholder="write Donation Amount"
                                 class="input input-bordered input-primary w-full p-4" />
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-success w-full p-4  hover:bg-orange-500">Donate Now</button>
+                            <button id="btn2-add-money" class="btn btn-success w-full p-4  hover:bg-orange-500">Donate Now</button>
                         </div>
                     </div>
 
@@ -130,19 +134,24 @@
                     </div>
                     
                     <div class="card-body p-4 my-4">
-                        <div>
-                            <button class="btn flex justify-center gap-2">
-                                <img class="w-6" src="images/coin.png" alt="" /> 0 BDT
-                            </button>
-                        </div>
+                        <span  class="flex gap-3 w-28 shadow-sm p-1">
+                            <img src="images/coin.png" alt="">
+                            <p id="account-balance3">500</p>
+                            <h3> BDT </h3>                                 
+                        </span>
                         <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
                         <p> The recent Quota movement has resulted in numerous injuries and <br> significant hardship for many individuals. Your support is crucial in <br> providing medical assistance, rehabilitation, and necessary supplies <br> to those affected. By contributing, you help ensure that injured <br> individuals receive the care and support they need during this <br> challenging time. Every donation plays a vital role in alleviating their <br> suffering and aiding in their recovery. Please consider making a <br> donation to support these brave individuals in their time of need.</p>
+                        <!-- popup sms  -->
+                        <div id="sussess-add3" class="hidden">
+                            <h3>money add sussess </h3>
+                        </div>
+                        
                         <div class="">
-                            <input type="text" placeholder="write Donation Amount"
+                            <input id="input3-add-money" type="text" placeholder="write Donation Amount"
                                 class="input input-bordered input-primary w-full p-4" />
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-success w-full p-4  hover:bg-orange-500">Donate Now</button>
+                            <button id="btn3-add-money" class="btn btn-success w-full p-4  hover:bg-orange-500">Donate Now</button>
                         </div>
                     </div>
 
@@ -157,6 +166,8 @@
     <footer></footer>
 
     <script src="js/dom.js"></script>
+    <script src="js/card2.js"></script>
+    <script src="js/card3.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,5 @@
+// card-2 style 
+
 console.log('welcome')
 document.getElementById('btn2-add-money')
 .addEventListener('click', function(event){
@@ -37,3 +39,4 @@ document.getElementById('btn2-add-money')
         popup.style.display='none';
     }, 1000);
  }
+

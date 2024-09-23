@@ -41,3 +41,6 @@ document.getElementById('btn-add-money')
         popup.style.display='none';
     }, 1000);
  }
+
+//  hidden 
+

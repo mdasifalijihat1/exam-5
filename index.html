@@ -14,7 +14,7 @@
     <!-- head section style -->
     <header class="sm:p-4">
         <nav>
-            <div class="navbar bg-base-200">
+            <div class="navbar bg-base-200 shadow-sm rounded-md sm:">
                 <div class="navbar-start">
                     <a href="blog.html"><button class="btn btn-success hover:bg-orange-500">Blog</button></a>
                 </div>
@@ -24,11 +24,12 @@
                         Bangladesh
                     </a>
                 </div>
-                <div class="navbar-end">
-                    <button class="btn btn-ghost hover:bg-orange-500">
-                        <img class="w-7" src="images/coin.png" alt="" />
-                        5500 BDT
-                    </button>
+                <div class="navbar-end ">
+                    <span class="flex gap-3 w-28 shadow-sm p-1 hover:bg-orange-500">
+                        <img src="images/coin.png" alt="">
+                        <p>500</p>
+                        <h3> BDT </h3>                                 
+                    </span>
                 </div>
             </div>
         </nav>
@@ -46,7 +47,7 @@
         </section>
 
         <!-- 1st card style -->
-        <section>
+        <section class="my-2">
 
             <div class="flex flex-col-1 md:flex-row justify-center mx-auto md:w-[1140px] md:h-[453px]">
                 <div class="card md:card-side bg-base-100 shadow-xl">
@@ -57,21 +58,26 @@
                     </div>
                     
                     <div class="card-body p-4 my-6">
-                        <div>
-                            <button class="btn flex justify-center gap-2">
-                                <img class="w-6" src="images/coin.png" alt="" /> 0 BDT
-                            </button>
-                        </div>
+                        
+                            <span class="flex gap-3 w-28 shadow-sm p-1">
+                                <img src="images/coin.png" alt="">
+                                <p id="account-balance">500</p>
+                                <h3> BDT </h3>                                 
+                            </span>
+                        
                         <h2 class="card-title">Donate for Flood at Noakhali, Bangladesh</h2>
                         <p> The recent floods in Noakhali have caused significant damage to <br>homes  infrastructure. Your donation will help provide essential <br> supplies and  to those affected by this disaster. Every contribution, <br> big or small, makes  difference. Please join us in supporting the relief 
                              <br>efforts and making a positive impact on the lives of those in need.</p>
+                             <div id="sussess-add" class="hidden">
+                                <h3>money add sussess </h3>
+                            </div>
                         <div class="">
-                            <input type="text" placeholder="write Donation Amount"
+                            <input  id="input-add-money" type="text" placeholder="write Donation Amount"
                                 class="input input-bordered input-primary w-full p-4" />
                         </div>
                         <div class="card-actions">
-                            <button class="btn btn-success w-full p-4  hover:bg-orange-500">Donate Now</button>
-                        </div>
+                            <button id="btn-add-money" class="btn btn-success w-full p-4  hover:bg-orange-500">Donate Now</button>
+                        </div>                       
                     </div>
 
                 </div>

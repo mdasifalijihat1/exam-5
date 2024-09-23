@@ -45,7 +45,7 @@ document.getElementById('btn2-add-money')
         
     }
     else if (addMoneyNumber <= 0) {
-              alert('Negative amount is not allowed.')              
+              alert('Invalid amount allowed.')              
     }
     else{
         alert('please enter your amount')

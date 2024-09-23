@@ -22,7 +22,7 @@ document.getElementById('btn-add-money')
         // add to doanation hostory
         const p =document.createElement('p')
         const currentDateTime = new Date().toLocaleDateString();        
-        p.innerText = `${addMoney} Taka is Donated for famine-2024 at Feni, Bangladesh ${newBalance} 
+        p.innerHTML = `${addMoney} Taka is Donated for famine-2024 at Feni, Bangladesh ${newBalance} 
                                     Date: ${currentDateTime}`
         // show tag
         document.getElementById('history-container').appendChild(p)
@@ -38,7 +38,7 @@ document.getElementById('btn-add-money')
               alert('Negative amount is not allowed.')              
     }
     else{
-        alert('please enter your valid amount')
+        alert('please enter your amount')
     }
 
 } );

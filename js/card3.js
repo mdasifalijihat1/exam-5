@@ -32,6 +32,9 @@ document.getElementById('btn3-add-money')
         // show tag
         document.getElementById('history-container').appendChild(p) 
 
+        // alert success
+        alert('Congratulation! Donation successfull!')
+
         }
         else{
             alert('Your account doesn`t have enoungh money')

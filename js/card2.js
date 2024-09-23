@@ -32,7 +32,10 @@ document.getElementById('btn2-add-money')
         p.innerText = `${addMoney} Taka is Donated for famine-2024 at Feni, Bangladesh ${newBalance} 
                                     Date: ${currentDateTime}`
         // show tag
-        document.getElementById('history-container').appendChild(p)            
+        document.getElementById('history-container').appendChild(p) 
+        
+        // alert success
+        alert('Congratulation! Donation successfull!')
 
         }
         else{

@@ -16,10 +16,9 @@ document.getElementById('btn3-add-money')
         // check balance 
         if(addMoneyNumber <= myBalnaceNumber){
             const newMyBalance = myBalnaceNumber - addMoneyNumber;
-            myBalanceElement.innerText = newMyBalance;             
-        }
-        
-        const balance  =document.getElementById('account-balance3').innerText;
+            myBalanceElement.innerText = newMyBalance; 
+            
+            const balance  =document.getElementById('account-balance3').innerText;
         const balanceNumber = parseFloat(balance);
         const newBalance = balanceNumber + addMoneyNumber;
         document.getElementById('account-balance3').innerText = newBalance;
@@ -31,9 +30,13 @@ document.getElementById('btn3-add-money')
         p.innerText = `${addMoney} Taka is Donated for famine-2024 at Feni, Bangladesh ${newBalance} 
                                     Date: ${currentDateTime}`
         // show tag
-        document.getElementById('history-container').appendChild(p)
+        document.getElementById('history-container').appendChild(p) 
 
-        
+        }
+        else{
+            alert('Your account doesn`t have enoungh money')
+        }     
+             
     }
     else if (addMoneyNumber <= 0) {
               alert('Negative amount is not allowed.')              

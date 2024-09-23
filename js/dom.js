@@ -18,9 +18,9 @@ document.getElementById('btn-add-money')
          // check balance 
          if(addMoneyNumber <= myBalnaceNumber){
              const newMyBalance = myBalnaceNumber - addMoneyNumber;
-             myBalanceElement.innerText = newMyBalance;             
-         }
-
+             myBalanceElement.innerText = newMyBalance; 
+             
+             
         const balance  =document.getElementById('account-balance').innerText;
         const balanceNumber = parseFloat(balance);
         const newBalance = balanceNumber + addMoneyNumber;
@@ -38,9 +38,13 @@ document.getElementById('btn-add-money')
         
 
         // show popup
-        showPopup('Money added successfully!');
+        showPopup('Money added successfully!'); 
 
-         
+
+         } else{
+            alert('Your account doesn`t have enoungh money ')
+         }
+        
         
     }
     else if (addMoneyNumber <= 0) {

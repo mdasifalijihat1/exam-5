@@ -10,6 +10,15 @@ document.getElementById('btn2-add-money')
     console.log(addMoney);
 
     if(addMoney && addMoneyNumber > 0){
+        const myBalanceElement = document.getElementById('my-account-balance');
+        const myBalnaceNumber = parseFloat(myBalanceElement.innerText);
+
+        // check balance 
+        if(addMoneyNumber <= myBalnaceNumber){
+            const newMyBalance = myBalnaceNumber - addMoneyNumber;
+            myBalanceElement.innerText = newMyBalance;             
+        }
+
         const balance  =document.getElementById('account-balance2').innerText;
         const balanceNumber = parseFloat(balance);
         const newBalance = balanceNumber + addMoneyNumber;

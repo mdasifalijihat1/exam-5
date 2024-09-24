@@ -30,7 +30,7 @@ document.getElementById('btn2-add-money')
         const p =document.createElement('p')
         const currentDateTime = new Date().toLocaleDateString();        
         p.innerText = `${addMoney} Taka is Donated for famine-2024 at Feni, Bangladesh ${newBalance} 
-                                    Date: ${currentDateTime}`
+                                    Date: ${new Date().toString()}`
         // show tag
         document.getElementById('history-container').appendChild(p) 
         

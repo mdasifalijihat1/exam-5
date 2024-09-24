@@ -22,8 +22,7 @@ document.getElementById('btn2-add-money')
         const balanceNumber = parseFloat(balance);
         const newBalance = balanceNumber + addMoneyNumber;
         document.getElementById('account-balance2').innerText = newBalance;
-        // show popup
-        showPopup('Money added successfully!')
+        
 
         // history 
 
@@ -45,7 +44,7 @@ document.getElementById('btn2-add-money')
         
     }
     else if (addMoneyNumber <= 0) {
-              alert('Invalid amount allowed.')              
+              alert('Invalid amount.')              
     }
     else{
         alert('please enter your amount')
@@ -55,13 +54,4 @@ document.getElementById('btn2-add-money')
 
 // show popup 
 
- function showPopup(message){
-    const popup = document.getElementById('sussess-add2');
-    popup.innerText = message;
-    popup.style.display = 'block';
-
-    setTimeout(function() {
-        popup.style.display='none';
-    }, 1000);
- }
 

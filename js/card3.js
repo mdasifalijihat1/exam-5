@@ -22,9 +22,7 @@ document.getElementById('btn3-add-money')
         const balanceNumber = parseFloat(balance);
         const newBalance = balanceNumber + addMoneyNumber;
         document.getElementById('account-balance3').innerText = newBalance;
-        // show popup
-        showPopup('Money added successfully!')
-
+        
         const p =document.createElement('p')
         const currentDateTime = new Date().toLocaleDateString();        
         p.innerText = `${addMoney} Taka is Donated for famine-2024 at Feni, Bangladesh ${newBalance} 
@@ -42,7 +40,7 @@ document.getElementById('btn3-add-money')
              
     }
     else if (addMoneyNumber <= 0) {
-              alert('Invalid amount allowed.')              
+              alert('Invalid amount.')              
     }
     else{
         alert('please enter your valid amount')
@@ -51,16 +49,3 @@ document.getElementById('btn3-add-money')
 } );
 
 // show popup 
-
- function showPopup(message){
-    const popup = document.getElementById('sussess-add3');
-    popup.innerText = message;
-    popup.style.display = 'block';
-
-    setTimeout(function() {
-        popup.style.display='none';
-    }, 1000);
- }
-
-//  hidden 
-
